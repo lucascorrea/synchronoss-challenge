@@ -13,29 +13,18 @@
 		A0A5007120765CE800FB6C24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A5006F20765CE800FB6C24 /* Main.storyboard */; };
 		A0A5007320765CEA00FB6C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A5007220765CEA00FB6C24 /* Assets.xcassets */; };
 		A0A5007620765CEA00FB6C24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A5007420765CEA00FB6C24 /* LaunchScreen.storyboard */; };
-		A0A5008120765CEB00FB6C24 /* synchronossTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5008020765CEB00FB6C24 /* synchronossTests.swift */; };
-		A0A5008C20765CEB00FB6C24 /* synchronossUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5008B20765CEB00FB6C24 /* synchronossUITests.swift */; };
 		A0A5009A20765E2900FB6C24 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A0A5009920765E2900FB6C24 /* README.md */; };
+		A0A500A6207664E500FB6C24 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500A5207664E500FB6C24 /* API.swift */; };
+		A0A500A920766B8600FB6C24 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A0A500A820766B8600FB6C24 /* .swiftlint.yml */; };
+		CCCC758982368F25604EE391 /* Pods_synchronoss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0781CF4B7D5A32E23D5587E3 /* Pods_synchronoss.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A0A5007D20765CEB00FB6C24 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0A5005E20765CE800FB6C24 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0A5006520765CE800FB6C24;
-			remoteInfo = synchronoss;
-		};
-		A0A5008820765CEB00FB6C24 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0A5005E20765CE800FB6C24 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0A5006520765CE800FB6C24;
-			remoteInfo = synchronoss;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		0781CF4B7D5A32E23D5587E3 /* Pods_synchronoss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_synchronoss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		236D65A37F2A00FC57BE62F6 /* Pods-synchronossUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-synchronossUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-synchronossUITests/Pods-synchronossUITests.release.xcconfig"; sourceTree = "<group>"; };
+		328EC24C70A8D22DE62590D4 /* Pods-synchronoss.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-synchronoss.release.xcconfig"; path = "Pods/Target Support Files/Pods-synchronoss/Pods-synchronoss.release.xcconfig"; sourceTree = "<group>"; };
+		394BCC53F002DDA99190F17F /* Pods-synchronossTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-synchronossTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-synchronossTests/Pods-synchronossTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F9AA228E5D16A0A5A78F05B /* Pods-synchronossUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-synchronossUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-synchronossUITests/Pods-synchronossUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0A5006620765CE800FB6C24 /* synchronoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = synchronoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A5006920765CE800FB6C24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0A5006B20765CE800FB6C24 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -44,13 +33,13 @@
 		A0A5007220765CEA00FB6C24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0A5007520765CEA00FB6C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0A5007720765CEA00FB6C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0A5007C20765CEB00FB6C24 /* synchronossTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = synchronossTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0A5008020765CEB00FB6C24 /* synchronossTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = synchronossTests.swift; sourceTree = "<group>"; };
-		A0A5008220765CEB00FB6C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0A5008720765CEB00FB6C24 /* synchronossUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = synchronossUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0A5008B20765CEB00FB6C24 /* synchronossUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = synchronossUITests.swift; sourceTree = "<group>"; };
-		A0A5008D20765CEB00FB6C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0A5009920765E2900FB6C24 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A0A500A5207664E500FB6C24 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A0A500A820766B8600FB6C24 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		AF5684C45939AD70CEE3527B /* Pods-synchronossTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-synchronossTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-synchronossTests/Pods-synchronossTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD5737C6FE85C79C1B995706 /* Pods-synchronoss.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-synchronoss.debug.xcconfig"; path = "Pods/Target Support Files/Pods-synchronoss/Pods-synchronoss.debug.xcconfig"; sourceTree = "<group>"; };
+		D4FAA0851203329E640E46D8 /* Pods_synchronossUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_synchronossUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCCA5690B76B15FDAD6F1D80 /* Pods_synchronossTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_synchronossTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,34 +47,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0A5007920765CEB00FB6C24 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0A5008420765CEB00FB6C24 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				CCCC758982368F25604EE391 /* Pods_synchronoss.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		981861D73DBDEA32C1597C9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0781CF4B7D5A32E23D5587E3 /* Pods_synchronoss.framework */,
+				DCCA5690B76B15FDAD6F1D80 /* Pods_synchronossTests.framework */,
+				D4FAA0851203329E640E46D8 /* Pods_synchronossUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A0A5005D20765CE800FB6C24 = {
 			isa = PBXGroup;
 			children = (
 				A0A5009920765E2900FB6C24 /* README.md */,
+				A0A500A820766B8600FB6C24 /* .swiftlint.yml */,
 				A0A5006820765CE800FB6C24 /* synchronoss */,
-				A0A5007F20765CEB00FB6C24 /* synchronossTests */,
-				A0A5008A20765CEB00FB6C24 /* synchronossUITests */,
 				A0A5006720765CE800FB6C24 /* Products */,
+				B4072DB59E88FD3DEAC351DB /* Pods */,
+				981861D73DBDEA32C1597C9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,8 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				A0A5006620765CE800FB6C24 /* synchronoss.app */,
-				A0A5007C20765CEB00FB6C24 /* synchronossTests.xctest */,
-				A0A5008720765CEB00FB6C24 /* synchronossUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,24 +99,6 @@
 				A0A500A4207662AE00FB6C24 /* Resources */,
 			);
 			path = synchronoss;
-			sourceTree = "<group>";
-		};
-		A0A5007F20765CEB00FB6C24 /* synchronossTests */ = {
-			isa = PBXGroup;
-			children = (
-				A0A5008020765CEB00FB6C24 /* synchronossTests.swift */,
-				A0A5008220765CEB00FB6C24 /* Info.plist */,
-			);
-			path = synchronossTests;
-			sourceTree = "<group>";
-		};
-		A0A5008A20765CEB00FB6C24 /* synchronossUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A0A5008B20765CEB00FB6C24 /* synchronossUITests.swift */,
-				A0A5008D20765CEB00FB6C24 /* Info.plist */,
-			);
-			path = synchronossUITests;
 			sourceTree = "<group>";
 		};
 		A0A5009B2076625A00FB6C24 /* App */ = {
@@ -168,6 +135,7 @@
 		A0A5009F2076627800FB6C24 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				A0A500A5207664E500FB6C24 /* API.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -211,6 +179,19 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		B4072DB59E88FD3DEAC351DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD5737C6FE85C79C1B995706 /* Pods-synchronoss.debug.xcconfig */,
+				328EC24C70A8D22DE62590D4 /* Pods-synchronoss.release.xcconfig */,
+				AF5684C45939AD70CEE3527B /* Pods-synchronossTests.debug.xcconfig */,
+				394BCC53F002DDA99190F17F /* Pods-synchronossTests.release.xcconfig */,
+				9F9AA228E5D16A0A5A78F05B /* Pods-synchronossUITests.debug.xcconfig */,
+				236D65A37F2A00FC57BE62F6 /* Pods-synchronossUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0A5009020765CEB00FB6C24 /* Build configuration list for PBXNativeTarget "synchronoss" */;
 			buildPhases = (
+				6670F60AD1AACCCCC41529C7 /* [CP] Check Pods Manifest.lock */,
 				A0A5006220765CE800FB6C24 /* Sources */,
 				A0A5006320765CE800FB6C24 /* Frameworks */,
 				A0A5006420765CE800FB6C24 /* Resources */,
+				74A45BE57974E06C25E82C77 /* [CP] Embed Pods Frameworks */,
+				A0A500A7207668B500FB6C24 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -230,42 +214,6 @@
 			productName = synchronoss;
 			productReference = A0A5006620765CE800FB6C24 /* synchronoss.app */;
 			productType = "com.apple.product-type.application";
-		};
-		A0A5007B20765CEB00FB6C24 /* synchronossTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A0A5009320765CEB00FB6C24 /* Build configuration list for PBXNativeTarget "synchronossTests" */;
-			buildPhases = (
-				A0A5007820765CEB00FB6C24 /* Sources */,
-				A0A5007920765CEB00FB6C24 /* Frameworks */,
-				A0A5007A20765CEB00FB6C24 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A0A5007E20765CEB00FB6C24 /* PBXTargetDependency */,
-			);
-			name = synchronossTests;
-			productName = synchronossTests;
-			productReference = A0A5007C20765CEB00FB6C24 /* synchronossTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A0A5008620765CEB00FB6C24 /* synchronossUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A0A5009620765CEB00FB6C24 /* Build configuration list for PBXNativeTarget "synchronossUITests" */;
-			buildPhases = (
-				A0A5008320765CEB00FB6C24 /* Sources */,
-				A0A5008420765CEB00FB6C24 /* Frameworks */,
-				A0A5008520765CEB00FB6C24 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A0A5008920765CEB00FB6C24 /* PBXTargetDependency */,
-			);
-			name = synchronossUITests;
-			productName = synchronossUITests;
-			productReference = A0A5008720765CEB00FB6C24 /* synchronossUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -279,14 +227,6 @@
 				TargetAttributes = {
 					A0A5006520765CE800FB6C24 = {
 						CreatedOnToolsVersion = 9.3;
-					};
-					A0A5007B20765CEB00FB6C24 = {
-						CreatedOnToolsVersion = 9.3;
-						TestTargetID = A0A5006520765CE800FB6C24;
-					};
-					A0A5008620765CEB00FB6C24 = {
-						CreatedOnToolsVersion = 9.3;
-						TestTargetID = A0A5006520765CE800FB6C24;
 					};
 				};
 			};
@@ -304,8 +244,6 @@
 			projectRoot = "";
 			targets = (
 				A0A5006520765CE800FB6C24 /* synchronoss */,
-				A0A5007B20765CEB00FB6C24 /* synchronossTests */,
-				A0A5008620765CEB00FB6C24 /* synchronossUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -315,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A500A920766B8600FB6C24 /* .swiftlint.yml in Resources */,
 				A0A5007620765CEA00FB6C24 /* LaunchScreen.storyboard in Resources */,
 				A0A5007320765CEA00FB6C24 /* Assets.xcassets in Resources */,
 				A0A5009A20765E2900FB6C24 /* README.md in Resources */,
@@ -322,21 +261,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0A5007A20765CEB00FB6C24 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0A5008520765CEB00FB6C24 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6670F60AD1AACCCCC41529C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-synchronoss-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74A45BE57974E06C25E82C77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-synchronoss/Pods-synchronoss-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-synchronoss/Pods-synchronoss-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0A500A7207668B500FB6C24 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0A5006220765CE800FB6C24 /* Sources */ = {
@@ -345,40 +322,12 @@
 			files = (
 				A0A5006E20765CE800FB6C24 /* SecondViewController.swift in Sources */,
 				A0A5006A20765CE800FB6C24 /* AppDelegate.swift in Sources */,
+				A0A500A6207664E500FB6C24 /* API.swift in Sources */,
 				A0A5006C20765CE800FB6C24 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0A5007820765CEB00FB6C24 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A0A5008120765CEB00FB6C24 /* synchronossTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0A5008320765CEB00FB6C24 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A0A5008C20765CEB00FB6C24 /* synchronossUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A0A5007E20765CEB00FB6C24 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A0A5006520765CE800FB6C24 /* synchronoss */;
-			targetProxy = A0A5007D20765CEB00FB6C24 /* PBXContainerItemProxy */;
-		};
-		A0A5008920765CEB00FB6C24 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A0A5006520765CE800FB6C24 /* synchronoss */;
-			targetProxy = A0A5008820765CEB00FB6C24 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A0A5006F20765CE800FB6C24 /* Main.storyboard */ = {
@@ -516,6 +465,7 @@
 		};
 		A0A5009120765CEB00FB6C24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD5737C6FE85C79C1B995706 /* Pods-synchronoss.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -535,6 +485,7 @@
 		};
 		A0A5009220765CEB00FB6C24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 328EC24C70A8D22DE62590D4 /* Pods-synchronoss.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -549,88 +500,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		A0A5009420765CEB00FB6C24 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6CG326ELR9;
-				INFOPLIST_FILE = synchronossTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.siriuscode.synchronossTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/synchronoss.app/synchronoss";
-			};
-			name = Debug;
-		};
-		A0A5009520765CEB00FB6C24 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6CG326ELR9;
-				INFOPLIST_FILE = synchronossTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.siriuscode.synchronossTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/synchronoss.app/synchronoss";
-			};
-			name = Release;
-		};
-		A0A5009720765CEB00FB6C24 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6CG326ELR9;
-				INFOPLIST_FILE = synchronossUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.siriuscode.synchronossUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = synchronoss;
-			};
-			name = Debug;
-		};
-		A0A5009820765CEB00FB6C24 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6CG326ELR9;
-				INFOPLIST_FILE = synchronossUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.siriuscode.synchronossUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = synchronoss;
 			};
 			name = Release;
 		};
@@ -651,24 +520,6 @@
 			buildConfigurations = (
 				A0A5009120765CEB00FB6C24 /* Debug */,
 				A0A5009220765CEB00FB6C24 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A0A5009320765CEB00FB6C24 /* Build configuration list for PBXNativeTarget "synchronossTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A0A5009420765CEB00FB6C24 /* Debug */,
-				A0A5009520765CEB00FB6C24 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A0A5009620765CEB00FB6C24 /* Build configuration list for PBXNativeTarget "synchronossUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A0A5009720765CEB00FB6C24 /* Debug */,
-				A0A5009820765CEB00FB6C24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
