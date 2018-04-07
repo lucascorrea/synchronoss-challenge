@@ -1,5 +1,5 @@
 language: swift
-osx_image: xcode9
+osx_image: xcode9.3beta
 xcode_workspace: synchronoss.xcworkspace
 xcode_scheme: SynchronossTests
 before_install:
@@ -7,4 +7,4 @@ before_install:
     - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 script:
     - xcodebuild -workspace synchronoss.xcworkspace -list
-    - xcodebuild -workspace synchronoss.xcworkspace -scheme synchronoss -sdk iphonesimulator -enableCodeCoverage YES -destination 'platform=iOS Simulator,name=iPhone 5s,OS=11.0' GCC_GENERATE_TEST_COVERAGE_FILES=YES build test
+    - xcodebuild -workspace synchronoss.xcworkspace -scheme synchronoss -sdk iphonesimulator -enableCodeCoverage YES -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.3' GCC_GENERATE_TEST_COVERAGE_FILES=YES build test
