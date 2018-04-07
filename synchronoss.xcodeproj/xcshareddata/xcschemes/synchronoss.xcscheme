@@ -29,6 +29,16 @@
       codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A0A500D020797B1C00FB6C24"
+               BuildableName = "SynchronossTests.xctest"
+               BlueprintName = "SynchronossTests"
+               ReferencedContainer = "container:synchronoss.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

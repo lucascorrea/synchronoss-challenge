@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.7.1)
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
   - SCTwitter (1.0):
     - TwitterCore (= 1.11.3)
     - TwitterKit (= 1.11.3)
@@ -10,6 +12,8 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Nimble
+  - Quick
   - SCTwitter
   - SwiftLint
   - SWXMLHash (~> 4.0.0)
@@ -17,6 +21,8 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - Nimble
+    - Quick
     - SCTwitter
     - SwiftLint
     - SWXMLHash
@@ -25,12 +31,14 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   SCTwitter: edbf6fb6e57fd3fa76a85b4191b21220a93d1ac1
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
   SWXMLHash: 6bbc0bf72975a18ceda469fb7d6a886a26d81694
   TwitterCore: ac822b826d021c483569d3d0588645dfa543bee9
   TwitterKit: 8900e0032610749cebb37a9950f40fd1da606587
 
-PODFILE CHECKSUM: 44072af837c25751b6056a8e6d1628f221bf806d
+PODFILE CHECKSUM: b461404a947785d79217632bc13d69b8596b3747
 
 COCOAPODS: 1.5.0.beta.1

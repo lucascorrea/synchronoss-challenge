@@ -1,0 +1,6 @@
+framework module Pods_SynchronossTests {
+  umbrella header "Pods-SynchronossTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
