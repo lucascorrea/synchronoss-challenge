@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A0A5006A20765CE800FB6C24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5006920765CE800FB6C24 /* AppDelegate.swift */; };
-		A0A5006C20765CE800FB6C24 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5006B20765CE800FB6C24 /* FirstViewController.swift */; };
 		A0A5006E20765CE800FB6C24 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5006D20765CE800FB6C24 /* SecondViewController.swift */; };
 		A0A5007120765CE800FB6C24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A5006F20765CE800FB6C24 /* Main.storyboard */; };
 		A0A5007320765CEA00FB6C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A5007220765CEA00FB6C24 /* Assets.xcassets */; };
@@ -16,6 +15,19 @@
 		A0A5009A20765E2900FB6C24 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A0A5009920765E2900FB6C24 /* README.md */; };
 		A0A500A6207664E500FB6C24 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500A5207664E500FB6C24 /* API.swift */; };
 		A0A500A920766B8600FB6C24 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A0A500A820766B8600FB6C24 /* .swiftlint.yml */; };
+		A0A500AB20766FC900FB6C24 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500AA20766FC900FB6C24 /* Network.swift */; };
+		A0A500AF2076743E00FB6C24 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A500AE2076743E00FB6C24 /* libxml2.tbd */; };
+		A0A500B120767DED00FB6C24 /* StationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500B020767DED00FB6C24 /* StationsViewController.swift */; };
+		A0A500B320767FED00FB6C24 /* StationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500B220767FED00FB6C24 /* StationCell.swift */; };
+		A0A500B52076812400FB6C24 /* StationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500B42076812400FB6C24 /* StationsViewModel.swift */; };
+		A0A500B72076816F00FB6C24 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500B62076816F00FB6C24 /* Station.swift */; };
+		A0A500B92076937900FB6C24 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500B82076937800FB6C24 /* Loading.swift */; };
+		A0A500BB207693A600FB6C24 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500BA207693A600FB6C24 /* Global.swift */; };
+		A0A500BD207771D400FB6C24 /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A0A500BC207771D400FB6C24 /* Location.gpx */; };
+		A0A500BF2077816300FB6C24 /* StationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500BE2077816300FB6C24 /* StationDetailViewController.swift */; };
+		A0A500C12077819500FB6C24 /* StationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500C02077819500FB6C24 /* StationDetailViewModel.swift */; };
+		A0A500C32077835300FB6C24 /* StationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500C22077835300FB6C24 /* StationData.swift */; };
+		A0A500C52077869B00FB6C24 /* StationDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500C42077869B00FB6C24 /* StationDataCell.swift */; };
 		CCCC758982368F25604EE391 /* Pods_synchronoss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0781CF4B7D5A32E23D5587E3 /* Pods_synchronoss.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +39,6 @@
 		9F9AA228E5D16A0A5A78F05B /* Pods-synchronossUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-synchronossUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-synchronossUITests/Pods-synchronossUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0A5006620765CE800FB6C24 /* synchronoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = synchronoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A5006920765CE800FB6C24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0A5006B20765CE800FB6C24 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		A0A5006D20765CE800FB6C24 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A0A5007020765CE800FB6C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0A5007220765CEA00FB6C24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,6 +47,19 @@
 		A0A5009920765E2900FB6C24 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A0A500A5207664E500FB6C24 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		A0A500A820766B8600FB6C24 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		A0A500AA20766FC900FB6C24 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		A0A500AE2076743E00FB6C24 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		A0A500B020767DED00FB6C24 /* StationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationsViewController.swift; sourceTree = "<group>"; };
+		A0A500B220767FED00FB6C24 /* StationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCell.swift; sourceTree = "<group>"; };
+		A0A500B42076812400FB6C24 /* StationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewModel.swift; sourceTree = "<group>"; };
+		A0A500B62076816F00FB6C24 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		A0A500B82076937800FB6C24 /* Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		A0A500BA207693A600FB6C24 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		A0A500BC207771D400FB6C24 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		A0A500BE2077816300FB6C24 /* StationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailViewController.swift; sourceTree = "<group>"; };
+		A0A500C02077819500FB6C24 /* StationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailViewModel.swift; sourceTree = "<group>"; };
+		A0A500C22077835300FB6C24 /* StationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationData.swift; sourceTree = "<group>"; };
+		A0A500C42077869B00FB6C24 /* StationDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDataCell.swift; sourceTree = "<group>"; };
 		AF5684C45939AD70CEE3527B /* Pods-synchronossTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-synchronossTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-synchronossTests/Pods-synchronossTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD5737C6FE85C79C1B995706 /* Pods-synchronoss.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-synchronoss.debug.xcconfig"; path = "Pods/Target Support Files/Pods-synchronoss/Pods-synchronoss.debug.xcconfig"; sourceTree = "<group>"; };
 		D4FAA0851203329E640E46D8 /* Pods_synchronossUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_synchronossUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A500AF2076743E00FB6C24 /* libxml2.tbd in Frameworks */,
 				CCCC758982368F25604EE391 /* Pods_synchronoss.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +82,7 @@
 		981861D73DBDEA32C1597C9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0A500AE2076743E00FB6C24 /* libxml2.tbd */,
 				0781CF4B7D5A32E23D5587E3 /* Pods_synchronoss.framework */,
 				DCCA5690B76B15FDAD6F1D80 /* Pods_synchronossTests.framework */,
 				D4FAA0851203329E640E46D8 /* Pods_synchronossUITests.framework */,
@@ -121,6 +147,8 @@
 		A0A5009D2076626900FB6C24 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A0A500BA207693A600FB6C24 /* Global.swift */,
+				A0A500B82076937800FB6C24 /* Loading.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -135,6 +163,7 @@
 		A0A5009F2076627800FB6C24 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				A0A500AA20766FC900FB6C24 /* Network.swift */,
 				A0A500A5207664E500FB6C24 /* API.swift */,
 			);
 			path = Networking;
@@ -143,6 +172,8 @@
 		A0A500A02076628500FB6C24 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A0A500B62076816F00FB6C24 /* Station.swift */,
+				A0A500C22077835300FB6C24 /* StationData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,6 +181,8 @@
 		A0A500A12076628D00FB6C24 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A0A500B220767FED00FB6C24 /* StationCell.swift */,
+				A0A500C42077869B00FB6C24 /* StationDataCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,7 +190,8 @@
 		A0A500A22076629500FB6C24 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A0A5006B20765CE800FB6C24 /* FirstViewController.swift */,
+				A0A500B020767DED00FB6C24 /* StationsViewController.swift */,
+				A0A500BE2077816300FB6C24 /* StationDetailViewController.swift */,
 				A0A5006D20765CE800FB6C24 /* SecondViewController.swift */,
 			);
 			path = ViewControllers;
@@ -166,6 +200,8 @@
 		A0A500A3207662A600FB6C24 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A0A500B42076812400FB6C24 /* StationsViewModel.swift */,
+				A0A500C02077819500FB6C24 /* StationDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -175,6 +211,7 @@
 			children = (
 				A0A5007220765CEA00FB6C24 /* Assets.xcassets */,
 				A0A5007720765CEA00FB6C24 /* Info.plist */,
+				A0A500BC207771D400FB6C24 /* Location.gpx */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -257,6 +294,7 @@
 				A0A5007620765CEA00FB6C24 /* LaunchScreen.storyboard in Resources */,
 				A0A5007320765CEA00FB6C24 /* Assets.xcassets in Resources */,
 				A0A5009A20765E2900FB6C24 /* README.md in Resources */,
+				A0A500BD207771D400FB6C24 /* Location.gpx in Resources */,
 				A0A5007120765CE800FB6C24 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,10 +328,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-synchronoss/Pods-synchronoss-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -320,10 +360,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A500C12077819500FB6C24 /* StationDetailViewModel.swift in Sources */,
+				A0A500AB20766FC900FB6C24 /* Network.swift in Sources */,
+				A0A500B92076937900FB6C24 /* Loading.swift in Sources */,
+				A0A500C32077835300FB6C24 /* StationData.swift in Sources */,
 				A0A5006E20765CE800FB6C24 /* SecondViewController.swift in Sources */,
+				A0A500B72076816F00FB6C24 /* Station.swift in Sources */,
+				A0A500B320767FED00FB6C24 /* StationCell.swift in Sources */,
+				A0A500BF2077816300FB6C24 /* StationDetailViewController.swift in Sources */,
+				A0A500C52077869B00FB6C24 /* StationDataCell.swift in Sources */,
+				A0A500B52076812400FB6C24 /* StationsViewModel.swift in Sources */,
 				A0A5006A20765CE800FB6C24 /* AppDelegate.swift in Sources */,
+				A0A500B120767DED00FB6C24 /* StationsViewController.swift in Sources */,
+				A0A500BB207693A600FB6C24 /* Global.swift in Sources */,
 				A0A500A6207664E500FB6C24 /* API.swift in Sources */,
-				A0A5006C20765CE800FB6C24 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,14 +522,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CG326ELR9;
 				INFOPLIST_FILE = "$(SRCROOT)/synchronoss/Resources/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.siriuscode.synchronoss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -492,14 +539,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CG326ELR9;
 				INFOPLIST_FILE = "$(SRCROOT)/synchronoss/Resources/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.siriuscode.synchronoss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
