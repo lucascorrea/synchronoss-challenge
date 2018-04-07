@@ -2,6 +2,8 @@
 
 This is the project to the Synchronoss challenge described below.
 
+[![Build Status](https://travis-ci.org/lucascorrea/synchronoss-challenge.svg?branch=master)](https://travis-ci.org/lucascorrea/synchronoss-challenge)
+
 ## Running:
 
 `CMD + u` will run all test cases via Quick and Nimble
