@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A0A5006A20765CE800FB6C24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5006920765CE800FB6C24 /* AppDelegate.swift */; };
-		A0A5006E20765CE800FB6C24 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5006D20765CE800FB6C24 /* SecondViewController.swift */; };
+		A0A5006E20765CE800FB6C24 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5006D20765CE800FB6C24 /* NewsViewController.swift */; };
 		A0A5007120765CE800FB6C24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A5006F20765CE800FB6C24 /* Main.storyboard */; };
 		A0A5007320765CEA00FB6C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A5007220765CEA00FB6C24 /* Assets.xcassets */; };
 		A0A5007620765CEA00FB6C24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A5007420765CEA00FB6C24 /* LaunchScreen.storyboard */; };
@@ -28,18 +28,21 @@
 		A0A500C12077819500FB6C24 /* StationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500C02077819500FB6C24 /* StationDetailViewModel.swift */; };
 		A0A500C32077835300FB6C24 /* StationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500C22077835300FB6C24 /* StationData.swift */; };
 		A0A500C52077869B00FB6C24 /* StationDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500C42077869B00FB6C24 /* StationDataCell.swift */; };
-		CCCC758982368F25604EE391 /* Pods_synchronoss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0781CF4B7D5A32E23D5587E3 /* Pods_synchronoss.framework */; };
+		A0A500C820793BEE00FB6C24 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500C720793BEE00FB6C24 /* NewsViewModel.swift */; };
+		A0A500CA20793DAE00FB6C24 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500C920793DAE00FB6C24 /* Tweet.swift */; };
+		A0A500CC2079723C00FB6C24 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A500CB2079723C00FB6C24 /* NewsCell.swift */; };
+		FCE99831E07E311E651CAD38 /* libPods-synchronoss.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C55C23B0A9C16427F564D65 /* libPods-synchronoss.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0781CF4B7D5A32E23D5587E3 /* Pods_synchronoss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_synchronoss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		236D65A37F2A00FC57BE62F6 /* Pods-synchronossUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-synchronossUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-synchronossUITests/Pods-synchronossUITests.release.xcconfig"; sourceTree = "<group>"; };
 		328EC24C70A8D22DE62590D4 /* Pods-synchronoss.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-synchronoss.release.xcconfig"; path = "Pods/Target Support Files/Pods-synchronoss/Pods-synchronoss.release.xcconfig"; sourceTree = "<group>"; };
 		394BCC53F002DDA99190F17F /* Pods-synchronossTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-synchronossTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-synchronossTests/Pods-synchronossTests.release.xcconfig"; sourceTree = "<group>"; };
+		4C55C23B0A9C16427F564D65 /* libPods-synchronoss.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-synchronoss.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9AA228E5D16A0A5A78F05B /* Pods-synchronossUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-synchronossUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-synchronossUITests/Pods-synchronossUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0A5006620765CE800FB6C24 /* synchronoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = synchronoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A5006920765CE800FB6C24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0A5006D20765CE800FB6C24 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A0A5006D20765CE800FB6C24 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		A0A5007020765CE800FB6C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0A5007220765CEA00FB6C24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0A5007520765CEA00FB6C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +63,10 @@
 		A0A500C02077819500FB6C24 /* StationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailViewModel.swift; sourceTree = "<group>"; };
 		A0A500C22077835300FB6C24 /* StationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationData.swift; sourceTree = "<group>"; };
 		A0A500C42077869B00FB6C24 /* StationDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDataCell.swift; sourceTree = "<group>"; };
+		A0A500C62079362400FB6C24 /* synchronoss-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "synchronoss-Bridging-Header.h"; sourceTree = "<group>"; };
+		A0A500C720793BEE00FB6C24 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		A0A500C920793DAE00FB6C24 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		A0A500CB2079723C00FB6C24 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		AF5684C45939AD70CEE3527B /* Pods-synchronossTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-synchronossTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-synchronossTests/Pods-synchronossTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD5737C6FE85C79C1B995706 /* Pods-synchronoss.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-synchronoss.debug.xcconfig"; path = "Pods/Target Support Files/Pods-synchronoss/Pods-synchronoss.debug.xcconfig"; sourceTree = "<group>"; };
 		D4FAA0851203329E640E46D8 /* Pods_synchronossUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_synchronossUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,7 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0A500AF2076743E00FB6C24 /* libxml2.tbd in Frameworks */,
-				CCCC758982368F25604EE391 /* Pods_synchronoss.framework in Frameworks */,
+				FCE99831E07E311E651CAD38 /* libPods-synchronoss.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,9 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				A0A500AE2076743E00FB6C24 /* libxml2.tbd */,
-				0781CF4B7D5A32E23D5587E3 /* Pods_synchronoss.framework */,
 				DCCA5690B76B15FDAD6F1D80 /* Pods_synchronossTests.framework */,
 				D4FAA0851203329E640E46D8 /* Pods_synchronossUITests.framework */,
+				4C55C23B0A9C16427F564D65 /* libPods-synchronoss.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,6 +156,7 @@
 			children = (
 				A0A500BA207693A600FB6C24 /* Global.swift */,
 				A0A500B82076937800FB6C24 /* Loading.swift */,
+				A0A500C62079362400FB6C24 /* synchronoss-Bridging-Header.h */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -174,6 +182,7 @@
 			children = (
 				A0A500B62076816F00FB6C24 /* Station.swift */,
 				A0A500C22077835300FB6C24 /* StationData.swift */,
+				A0A500C920793DAE00FB6C24 /* Tweet.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +192,7 @@
 			children = (
 				A0A500B220767FED00FB6C24 /* StationCell.swift */,
 				A0A500C42077869B00FB6C24 /* StationDataCell.swift */,
+				A0A500CB2079723C00FB6C24 /* NewsCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,7 +202,7 @@
 			children = (
 				A0A500B020767DED00FB6C24 /* StationsViewController.swift */,
 				A0A500BE2077816300FB6C24 /* StationDetailViewController.swift */,
-				A0A5006D20765CE800FB6C24 /* SecondViewController.swift */,
+				A0A5006D20765CE800FB6C24 /* NewsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -202,6 +212,7 @@
 			children = (
 				A0A500B42076812400FB6C24 /* StationsViewModel.swift */,
 				A0A500C02077819500FB6C24 /* StationDetailViewModel.swift */,
+				A0A500C720793BEE00FB6C24 /* NewsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -240,8 +251,8 @@
 				A0A5006220765CE800FB6C24 /* Sources */,
 				A0A5006320765CE800FB6C24 /* Frameworks */,
 				A0A5006420765CE800FB6C24 /* Resources */,
-				74A45BE57974E06C25E82C77 /* [CP] Embed Pods Frameworks */,
 				A0A500A7207668B500FB6C24 /* ShellScript */,
+				15D60E9089473BB63C2065C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,6 +313,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		15D60E9089473BB63C2065C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-synchronoss/Pods-synchronoss-resources.sh",
+				"${PODS_ROOT}/TwitterKit/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-synchronoss/Pods-synchronoss-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6670F60AD1AACCCCC41529C7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,26 +347,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		74A45BE57974E06C25E82C77 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-synchronoss/Pods-synchronoss-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-synchronoss/Pods-synchronoss-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A0A500A7207668B500FB6C24 /* ShellScript */ = {
@@ -364,16 +373,19 @@
 				A0A500AB20766FC900FB6C24 /* Network.swift in Sources */,
 				A0A500B92076937900FB6C24 /* Loading.swift in Sources */,
 				A0A500C32077835300FB6C24 /* StationData.swift in Sources */,
-				A0A5006E20765CE800FB6C24 /* SecondViewController.swift in Sources */,
+				A0A5006E20765CE800FB6C24 /* NewsViewController.swift in Sources */,
 				A0A500B72076816F00FB6C24 /* Station.swift in Sources */,
 				A0A500B320767FED00FB6C24 /* StationCell.swift in Sources */,
+				A0A500C820793BEE00FB6C24 /* NewsViewModel.swift in Sources */,
 				A0A500BF2077816300FB6C24 /* StationDetailViewController.swift in Sources */,
 				A0A500C52077869B00FB6C24 /* StationDataCell.swift in Sources */,
 				A0A500B52076812400FB6C24 /* StationsViewModel.swift in Sources */,
 				A0A5006A20765CE800FB6C24 /* AppDelegate.swift in Sources */,
 				A0A500B120767DED00FB6C24 /* StationsViewController.swift in Sources */,
+				A0A500CC2079723C00FB6C24 /* NewsCell.swift in Sources */,
 				A0A500BB207693A600FB6C24 /* Global.swift in Sources */,
 				A0A500A6207664E500FB6C24 /* API.swift in Sources */,
+				A0A500CA20793DAE00FB6C24 /* Tweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,9 +534,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CG326ELR9;
 				INFOPLIST_FILE = "$(SRCROOT)/synchronoss/Resources/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.siriuscode.synchronoss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "synchronoss/Helpers/synchronoss-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -539,9 +555,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CG326ELR9;
 				INFOPLIST_FILE = "$(SRCROOT)/synchronoss/Resources/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.siriuscode.synchronoss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "synchronoss/Helpers/synchronoss-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

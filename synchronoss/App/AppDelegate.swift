@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        SCTwitter.initWithConsumerKey("D6vneoIuMP0pdBZJAV7gg", consumerSecret: "wWc59eahiaES9ZCZ7wp28Rw4hcURG4fmIXvvwJiaR8")
+        
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) {(accepted, _) in
             if !accepted {
                 print("Notification access denied.")
