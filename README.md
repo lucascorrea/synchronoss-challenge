@@ -16,7 +16,7 @@ This is the project to the Synchronoss challenge described below.
 
 - Xcode version  9.3
 - Project pattern MVVM
-- Swift
+- Swift 4.1
 
 From Monday to Friday, I travel by train from Rathdrum to Dalkey in the morning and return in the evening.
 
