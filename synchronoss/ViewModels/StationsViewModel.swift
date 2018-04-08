@@ -51,13 +51,14 @@ class StationsViewModel {
                 print("Error parse of XML")
             }
             
-            success(nil)
+            success(self.stationsItems as AnyObject)
         }, failure: { (response, object, error) in
             failure(response, object, error)
         })
         
     }
     
+    // Configure Cell
     func configureCell(cell: inout StationCell, indexPath: IndexPath) {
         let station = stationsItems[indexPath.row]
         cell.nameLabel.text = station.name

@@ -18,12 +18,17 @@ class StationSpec: QuickSpec {
         beforeEach {
             
         }
-        
-        describe("") {
-            describe("") {
-                it ("") {
-                    
-                }
+    
+        describe("Station") {
+            it ("should create a new Station") {
+                let station = Station(stationId: 0,
+                                      name: "Rathdrum",
+                                      alias: "",
+                                      latitude: 52.9295,
+                                      longitude: -6.22641,
+                                      code: "RDRUM",
+                                      distance: "1km")
+                expect(station).toNot(beNil())
             }
         }
     }

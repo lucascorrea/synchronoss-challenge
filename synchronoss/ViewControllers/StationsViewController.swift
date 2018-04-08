@@ -19,7 +19,7 @@ class StationsViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var stationsTableView: UITableView!
     
     //
-    // MARK: - Cycle life
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         

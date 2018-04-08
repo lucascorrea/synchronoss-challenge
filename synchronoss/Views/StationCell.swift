@@ -14,7 +14,7 @@ class StationCell: UITableViewCell {
     @IBOutlet weak var distanceLabel: UILabel!
     
     //
-    // MARK: - Cycle life
+    // MARK: - Life cycle
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -13,6 +13,7 @@ public typealias SuccessHandler = (AnyObject?) -> Void
 public typealias FailureHandler = (HTTPURLResponse?, AnyObject?, Error?) -> Void
 
 class Network {
+    
     static func request(target: API, success: @escaping SuccessHandler, failure: @escaping FailureHandler) {
         print(target.url)
         
@@ -28,4 +29,5 @@ class Network {
             }
         }
     }
+    
 }

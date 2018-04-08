@@ -14,16 +14,16 @@ import Nimble
 class TweetSpec: QuickSpec {
     
     override func spec() {
+        var user: User!
         
         beforeEach {
-            
+            user = User(screenName: "IrishRail")
         }
         
-        describe("") {
-            describe("") {
-                it ("") {
-                    
-                }
+        describe("Tweet") {
+            it ("should create a new Tweet") {
+                let tweet = Tweet(time: "Thu Apr 06 15:28:43 +0000 2017", user: user, text: "Test tweet")
+                expect(tweet).toNot(beNil())
             }
         }
     }

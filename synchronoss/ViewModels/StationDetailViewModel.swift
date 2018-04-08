@@ -47,12 +47,13 @@ class StationDetailViewModel {
                 self.stationDataItems.append(stationData)
             }
             
-            success(nil)
+            success(self.stationDataItems as AnyObject)
         }, failure: { (response, object, error) in
             failure(response, object, error)
         })
     }
     
+    // Configure Cell
     func configureCell(cell: inout StationDataCell, indexPath: IndexPath) {
         let stationData = stationDataItems[indexPath.row]
         
@@ -91,6 +92,7 @@ class StationDetailViewModel {
         }
     }
     
+    // Add a alarm to a stationData
     func addAlarm(inMinutes: TimeInterval, identifier: String, stationData: StationData, completion: @escaping (_ Success: Bool) -> Void) {
         // I am adding a alarm to remember the user that the train arrive in X minutes.
         
@@ -130,6 +132,7 @@ class StationDetailViewModel {
         }
     }
     
+    // Remove the alarm to a identifier
     func removeAlarm(identifier: String) {
         
         UNUserNotificationCenter.current().getPendingNotificationRequests { (notificationRequests) in

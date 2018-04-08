@@ -16,14 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        // SCTwitter init
         SCTwitter.initWithConsumerKey("D6vneoIuMP0pdBZJAV7gg", consumerSecret: "wWc59eahiaES9ZCZ7wp28Rw4hcURG4fmIXvvwJiaR8")
         
+        // Request authorization Notification
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) {(accepted, _) in
             if !accepted {
                 print("Notification access denied.")
             }
         }
-        
         UNUserNotificationCenter.current().delegate = self
         
         return true
@@ -46,6 +47,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+//
+// MARK: - UNUserNotificationCenterDelegate
 extension AppDelegate: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler(.alert)

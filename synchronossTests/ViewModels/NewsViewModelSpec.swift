@@ -1,5 +1,5 @@
 //
-//  StationDetailViewModelSpec.swift
+//  NewsViewModelSpec.swift
 //  SynchronossTests
 //
 //  Created by Lucas Correa on 08/04/2018.
@@ -11,21 +11,21 @@ import Quick
 import Nimble
 @testable import synchronoss
 
-class StationDetailViewModelSpec: QuickSpec {
+class NewsViewModelSpec: QuickSpec {
     
     override func spec() {
-    
-        let stationDetailViewModel: StationDetailViewModel = StationDetailViewModel()
+        
+        var newsViewModel: NewsViewModel!
         
         beforeEach {
-        
+            newsViewModel = NewsViewModel()
         }
         
-        describe("StationDetailViewModel") {
-            describe("get list of stationDatas by Code") {
-                it("should return a list of stationDatas") {
+        describe("NewsViewModel") {
+            describe("get list the tweets of IrishRail") {
+                xit("should return a list of tweets") {
                     waitUntil(timeout: 60) { done in
-                        stationDetailViewModel.stationDataByCode(code: "MHIDE", success: { (suc) in
+                        newsViewModel.list(success: { (suc) in
                             expect(suc).toNot(beNil())
                             done()
                         },failure: { (_, _, _) in

@@ -15,6 +15,7 @@
 		A072510B2079896000DC1A65 /* StationsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072510A2079896000DC1A65 /* StationsViewModelSpec.swift */; };
 		A072510D2079897300DC1A65 /* TweetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072510C2079897300DC1A65 /* TweetSpec.swift */; };
 		A072511220798A3B00DC1A65 /* StationDetailViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072511120798A3B00DC1A65 /* StationDetailViewControllerSpec.swift */; };
+		A0725114207A417A00DC1A65 /* NewsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0725113207A417A00DC1A65 /* NewsViewModelSpec.swift */; };
 		A0A5006A20765CE800FB6C24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5006920765CE800FB6C24 /* AppDelegate.swift */; };
 		A0A5006E20765CE800FB6C24 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5006D20765CE800FB6C24 /* NewsViewController.swift */; };
 		A0A5007120765CE800FB6C24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A5006F20765CE800FB6C24 /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 		A072510A2079896000DC1A65 /* StationsViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewModelSpec.swift; sourceTree = "<group>"; };
 		A072510C2079897300DC1A65 /* TweetSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetSpec.swift; sourceTree = "<group>"; };
 		A072511120798A3B00DC1A65 /* StationDetailViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StationDetailViewControllerSpec.swift; path = synchronossTests/ViewControllers/StationDetailViewControllerSpec.swift; sourceTree = SOURCE_ROOT; };
+		A0725113207A417A00DC1A65 /* NewsViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsViewModelSpec.swift; path = synchronossTests/ViewModels/NewsViewModelSpec.swift; sourceTree = SOURCE_ROOT; };
 		A0A5006620765CE800FB6C24 /* synchronoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = synchronoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A5006920765CE800FB6C24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0A5006D20765CE800FB6C24 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			children = (
 				A0725102207988EA00DC1A65 /* StationDetailViewModelSpec.swift */,
 				A072510A2079896000DC1A65 /* StationsViewModelSpec.swift */,
+				A0725113207A417A00DC1A65 /* NewsViewModelSpec.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -226,9 +229,9 @@
 		A0A5009D2076626900FB6C24 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A0A500C62079362400FB6C24 /* synchronoss-Bridging-Header.h */,
 				A0A500BA207693A600FB6C24 /* Global.swift */,
 				A0A500B82076937800FB6C24 /* Loading.swift */,
-				A0A500C62079362400FB6C24 /* synchronoss-Bridging-Header.h */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -554,6 +557,7 @@
 				A0A500DC20797D4C00FB6C24 /* StationDataSpec.swift in Sources */,
 				A07251052079892B00DC1A65 /* StationSpec.swift in Sources */,
 				A072510D2079897300DC1A65 /* TweetSpec.swift in Sources */,
+				A0725114207A417A00DC1A65 /* NewsViewModelSpec.swift in Sources */,
 				A0725103207988EA00DC1A65 /* StationDetailViewModelSpec.swift in Sources */,
 				A072511220798A3B00DC1A65 /* StationDetailViewControllerSpec.swift in Sources */,
 			);

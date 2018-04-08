@@ -15,14 +15,22 @@ class StationsViewControllerSpec: QuickSpec {
     
     override func spec() {
         
+        var viewController: StationsViewController!
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        
         beforeEach {
+            let storyboard = UIStoryboard(name: "Main",
+                                          bundle: Bundle.main)
+            viewController = storyboard.instantiateViewController(withIdentifier: "StationsViewController") as? StationsViewController
             
+            window.makeKeyAndVisible()
+            window.rootViewController = viewController
         }
         
-        describe("") {
-            describe("") {
-                it ("") {
-                    
+        describe("StationsViewController") {
+            describe(".viewDidLoad") {
+                it ("should be presented") {
+                    expect(window.rootViewController).toEventually(beAnInstanceOf(StationsViewController.self))
                 }
             }
         }

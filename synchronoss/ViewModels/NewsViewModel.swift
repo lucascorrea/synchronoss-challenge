@@ -32,21 +32,22 @@ class NewsViewModel {
                 while let presentedViewController = topController.presentedViewController {
                     topController = presentedViewController
                 }
-                
+                Loading.close(view: UIApplication.shared.keyWindow!)
                 SCTwitter.loginViewControler(topController, callback: { (successTwitter, _) in
                     if successTwitter {
                         self.loadUserTimeline(success: success)
                     } else {
-                        failure(nil, nil, nil)
+                        failure(nil, "Cancel" as AnyObject, nil)
                     }
                 })
             }
         }
     }
     
+    // Configure Cell
     func configureCell(cell: inout NewsCell, indexPath: IndexPath) {
         let tweet = tweetItems[indexPath.row]
-        cell.detailLabel.text = tweet.text
+        cell.detailText.text = tweet.text
         cell.screenNameLabel.text = tweet.user.screenName
         let dateFormatter = Global.dateFormatter
         dateFormatter.dateFormat = "E MMM dd HH:mm:ss +0000 yyyy"
@@ -57,16 +58,16 @@ class NewsViewModel {
         cell.timeLabel.text = dateString
     }
     
+    // Get List of tweets of IrishRail
     fileprivate func loadUserTimeline(success: @escaping SuccessHandler) {
         SCTwitter.getUserTimeline(for: "IrishRail", sinceID: 0, startingAtPage: 0, count: 200) { (successTwitter, result) in
             if successTwitter {
                 do {
                     let data = try JSONSerialization.data(withJSONObject: result as Any, options: .prettyPrinted)
-                    print(data)
                     
                     let tweets = try JSONDecoder().decode([Tweet].self, from: data)
                     self.tweetItems = tweets
-                    success(nil)
+                    success(tweets as AnyObject)
                 } catch let err {
                     print(err)
                 }

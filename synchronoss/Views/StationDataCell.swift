@@ -25,7 +25,7 @@ class StationDataCell: UITableViewCell {
     weak var delegate: StationDataCellDelegate?
     
     //
-    // MARK: - Cycle life
+    // MARK: - Life cycle
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -15,14 +15,22 @@ class StationsViewModelSpec: QuickSpec {
     
     override func spec() {
         
+        let stationsViewModel: StationsViewModel = StationsViewModel()
+        
         beforeEach {
             
         }
         
-        describe("") {
-            describe("") {
-                it ("") {
-                    
+        describe("StationsViewModel") {
+            describe("get list of stations") {
+                it("should return a list of stations") {
+                    waitUntil(timeout: 60) { done in
+                        stationsViewModel.list(success: { (suc) in
+                            expect(suc).toNot(beNil())
+                            done()
+                        },failure: { (_, _, _) in
+                        })
+                    }
                 }
             }
         }

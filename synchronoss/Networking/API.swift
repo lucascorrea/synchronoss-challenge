@@ -12,7 +12,6 @@ import Alamofire
 enum API {
     case allStations
     case stationDataByCode(code: String)
-//    http://api.irishrail.ie/realtime/realtime.asmx/getStationDataByCodeXML?StationCode=mhide
 }
 
 extension API {
