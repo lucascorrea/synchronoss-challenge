@@ -59,7 +59,7 @@ class StationsViewModel {
     }
     
     // Configure Cell
-    func configureCell(cell: inout StationCell, indexPath: IndexPath) {
+    func configureCell(cell: StationCell, indexPath: IndexPath) {
         let station = stationsItems[indexPath.row]
         cell.nameLabel.text = station.name
         

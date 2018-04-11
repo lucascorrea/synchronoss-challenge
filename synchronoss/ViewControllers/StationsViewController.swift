@@ -81,8 +81,8 @@ extension StationsViewController: UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: StationCell = (tableView.dequeueReusableCell(withIdentifier: "StationCell", for: indexPath) as? StationCell)!
-        stationsViewModel.configureCell(cell: &cell, indexPath: indexPath)
+        let cell: StationCell = (tableView.dequeueReusableCell(withIdentifier: "StationCell", for: indexPath) as? StationCell)!
+        stationsViewModel.configureCell(cell: cell, indexPath: indexPath)
         return cell
     }
     

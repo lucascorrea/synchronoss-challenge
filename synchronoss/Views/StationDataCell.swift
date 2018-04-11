@@ -21,7 +21,6 @@ class StationDataCell: UITableViewCell {
     
     //
     // MARK: - Properties
-    var stationData: StationData?
     weak var delegate: StationDataCellDelegate?
     
     //

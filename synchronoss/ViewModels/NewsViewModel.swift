@@ -45,7 +45,7 @@ class NewsViewModel {
     }
     
     // Configure Cell
-    func configureCell(cell: inout NewsCell, indexPath: IndexPath) {
+    func configureCell(cell: NewsCell, indexPath: IndexPath) {
         let tweet = tweetItems[indexPath.row]
         cell.detailText.text = tweet.text
         cell.screenNameLabel.text = tweet.user.screenName

@@ -15,8 +15,8 @@ enum API {
 }
 
 extension API {
-    var baseURL: NSURL {
-        return NSURL(string: "http://api.irishrail.ie/realtime/realtime.asmx/")!
+    var baseURL: URL {
+        return URL(string: "http://api.irishrail.ie/realtime/realtime.asmx/")!
     }
     var method: HTTPMethod {
         switch self {

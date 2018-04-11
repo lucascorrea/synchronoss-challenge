@@ -73,12 +73,14 @@ class StationDetailViewController: UIViewController, StationDataCellDelegate {
     // MARK: - StationDataCellDelegate
     func chanceAlarmToCell(_ cell: StationDataCell, minutes: Int) {
         
+        let stationData = stationDetailViewModel.stationDataItems[(selectedCellIndexPath?.row)!]
+        
         selectedCellIndexPath = nil
         
         stationDataTableView.beginUpdates()
         stationDataTableView.endUpdates()
         
-        cell.stationData?.alarm = minutes
+        stationData.alarm = minutes
         
         let alarm = "min before arrival"
         
@@ -87,12 +89,12 @@ class StationDetailViewController: UIViewController, StationDataCellDelegate {
             cell.alarmLabel.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
             cell.alarmLabel.text = "Tap to set alarm"
             
-            stationDetailViewModel.removeAlarm(identifier: (cell.stationData?.trainCode)!)
+            stationDetailViewModel.removeAlarm(identifier: (stationData.trainCode)!)
         case 5, 10, 15, 20, 30:
             cell.alarmLabel.textColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
             cell.alarmLabel.text = "\(minutes) \(alarm)"
             
-            stationDetailViewModel.addAlarm(inMinutes: TimeInterval(minutes), identifier: (cell.stationData?.trainCode)!, stationData: cell.stationData!) { (success) in
+            stationDetailViewModel.addAlarm(inMinutes: TimeInterval(minutes), identifier: (stationData.trainCode)!, stationData: stationData) { (success) in
                 if success {
                     print("Added alarm")
                 } else {
@@ -115,10 +117,10 @@ extension StationDetailViewController: UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell: StationDataCell = (tableView.dequeueReusableCell(withIdentifier: "StationDataCell", for: indexPath) as? StationDataCell)!
+        let cell: StationDataCell = (tableView.dequeueReusableCell(withIdentifier: "StationDataCell", for: indexPath) as? StationDataCell)!
         
         cell.delegate = self
-        stationDetailViewModel.configureCell(cell: &cell, indexPath: indexPath)
+        stationDetailViewModel.configureCell(cell: cell, indexPath: indexPath)
         return cell
     }
     

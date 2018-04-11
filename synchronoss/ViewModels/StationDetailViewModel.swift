@@ -54,10 +54,9 @@ class StationDetailViewModel {
     }
     
     // Configure Cell
-    func configureCell(cell: inout StationDataCell, indexPath: IndexPath) {
+    func configureCell(cell: StationDataCell, indexPath: IndexPath) {
         let stationData = stationDataItems[indexPath.row]
         
-        cell.stationData = stationData
         cell.trainTypeLabel.text = stationData.trainType
         cell.destinationLabel.text = stationData.destination
         
