@@ -3,6 +3,7 @@
 This is the project to the Synchronoss challenge described below.
 
 [![Build Status](https://travis-ci.org/lucascorrea/synchronoss-challenge.svg?branch=master)](https://travis-ci.org/lucascorrea/synchronoss-challenge)
+[![codecov](https://codecov.io/gh/lucascorrea/synchronoss-challenge/branch/master/graph/badge.svg)](https://codecov.io/gh/lucascorrea/synchronoss-challenge)
 
 ## Demo
 
