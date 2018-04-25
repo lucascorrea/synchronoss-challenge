@@ -1,4 +1,4 @@
-platform :ios, '10.0'
+platform :ios, '9.0'
 
 target 'synchronoss' do
 
@@ -8,7 +8,9 @@ target 'synchronoss' do
   pod 'SwiftLint'
   pod 'SWXMLHash', '~> 4.0.0'
   pod 'SCTwitter'
-
+  pod 'Fabric'
+  pod 'Crashlytics'
+  
   target 'SynchronossTests' do
     use_frameworks!
     inherit! :search_paths

@@ -8,6 +8,8 @@
 
 import UIKit
 import UserNotifications
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        //Fabric
+        Fabric.with([Crashlytics.self])
         
         // SCTwitter init
         SCTwitter.initWithConsumerKey("D6vneoIuMP0pdBZJAV7gg", consumerSecret: "wWc59eahiaES9ZCZ7wp28Rw4hcURG4fmIXvvwJiaR8")
