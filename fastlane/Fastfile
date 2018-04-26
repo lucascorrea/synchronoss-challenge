@@ -21,13 +21,35 @@ platform :ios do
 
   before_all do
     ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
+
+    create_keychain(
+      name: ENV["MATCH_KEYCHAIN_NAME"],
+      password: ENV["MATCH_PASSWORD"],
+      default_keychain: true,
+      unlock: true,
+      timeout: 3600,
+      add_to_search_list: true,
+      verbose: true
+      )
   end
 
   desc "Push a new beta build to Fabric"
   lane :adhoc do
-    setup_travis	
+    setup_travis
     increment_build_number
-    build_app(workspace: "synchronoss.xcworkspace", scheme: "synchronoss", configuration: "adhoc", export_xcargs: "-allowProvisioningUpdates")
+    update_info_plist
+
+    match(
+      type: "adhoc",
+      app_identifier: "com.siriuscode.synchronoss",
+      keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
+      keychain_password: ENV["MATCH_PASSWORD"],
+      readonly: false,
+      verbose: false,
+      force_for_new_devices: true
+      )
+
+    gym
     send_crashlytics
   end
 
@@ -36,29 +58,38 @@ platform :ios do
     scan(device: "iPhone 6s")
   end
 
-desc "Send to Crashlytics"
-  private_lane :send_crashlytics do 
+  desc "Send to Crashlytics"
+  private_lane :send_crashlytics do
 
     crashlytics(
-        api_token: "98172dd97f0390bc2912872b57613dbb1be6cb34",
-        build_secret: "b8ab2b0b7b0821f6ed7d72ac78d1df563f3c8d6a4c90843533ff87fd5f6f465d",
-        ipa_path: "./Fastlane/Build/Synchronoss.ipa",
-        notes: "New version of Synchronoss.",
-        notifications: ""
-    )
+      api_token: "98172dd97f0390bc2912872b57613dbb1be6cb34",
+      build_secret: "b8ab2b0b7b0821f6ed7d72ac78d1df563f3c8d6a4c90843533ff87fd5f6f465d",
+      ipa_path: "./fastlane/Build/Synchronoss.ipa",
+      groups: "fastlane",
+      notes: "New version of Synchronoss.",
+      notifications: true
+      )
 
   end
-after_all do |lane|
+
+  after_all do |lane|
+
+    delete_keychain(
+      name: ENV["MATCH_KEYCHAIN_NAME"]
+      )
 
     slack(
       message: "New version of Synchronoss."
-    )
+      )
+  end
 
-    error do |lane, exception|
+  error do |lane, exception|
+    delete_keychain(
+      name: ENV["MATCH_KEYCHAIN_NAME"]
+      )
       slack(
         message: exception.message,
         success: false
-      )
+        )
     end
-  end
 end
