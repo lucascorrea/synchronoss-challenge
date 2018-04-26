@@ -3,9 +3,11 @@ disabled_rules:
   - comma
   - control_statement
   - trailing_whitespace
+  - file_length
+  - empty_count
 
 opt_in_rules:
-  - empty_count
+
 
 excluded:
   - Carthage
