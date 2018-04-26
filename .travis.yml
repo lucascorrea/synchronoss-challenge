@@ -5,8 +5,11 @@ xcode_scheme: SynchronossTests
 before_install:
     - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
     - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+install:
+    - bundle install
 script:
     - xcodebuild -workspace synchronoss.xcworkspace -list
     - xcodebuild -workspace synchronoss.xcworkspace -scheme synchronoss -sdk iphonesimulator -enableCodeCoverage YES -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.3' GCC_GENERATE_TEST_COVERAGE_FILES=YES build test
+    - fastlane adhoc
 after_success:
   - bash <(curl -s https://codecov.io/bash)
