@@ -10,5 +10,7 @@
 
 # sdk("iphoneos9.0")
 
+clean true
+
 output_directory "./fastlane/Build"
 output_name "Synchronoss"
