@@ -25,9 +25,7 @@ platform :ios do
 
   desc "Push a new beta build to Fabric"
   lane :adhoc do
-    #run_tests(workspace: "synchronoss.xcworkspace",
-    #        devices: ["iPhone X"],
-    #        scheme: "SynchronossTests")
+    setup_travis	
     increment_build_number
     build_app(workspace: "synchronoss.xcworkspace", scheme: "synchronoss", configuration: "adhoc", export_xcargs: "-allowProvisioningUpdates")
     send_crashlytics

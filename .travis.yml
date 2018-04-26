@@ -3,13 +3,18 @@ osx_image: xcode9.3beta
 xcode_workspace: synchronoss.xcworkspace
 xcode_scheme: SynchronossTests
 before_install:
-    - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
-    - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+- gem install cocoapods --no-rdoc --no-ri --no-document --quiet
+- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 install:
-    - bundle install
+- bundle install
 script:
-    - xcodebuild -workspace synchronoss.xcworkspace -list
-    - xcodebuild -workspace synchronoss.xcworkspace -scheme synchronoss -sdk iphonesimulator -enableCodeCoverage YES -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.3' GCC_GENERATE_TEST_COVERAGE_FILES=YES build test
-    - fastlane adhoc
+- xcodebuild -workspace synchronoss.xcworkspace -list
+- xcodebuild -workspace synchronoss.xcworkspace -scheme synchronoss -sdk iphonesimulator
+  -enableCodeCoverage YES -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.3'
+  GCC_GENERATE_TEST_COVERAGE_FILES=YES build test
+- fastlane adhoc
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+- bash <(curl -s https://codecov.io/bash)
+env:
+  global:
+    secure: nNIrquXG3Vh/0y+uLYed84iKkMfsWZOgMZ3FY54aZazqMLmdeAvQFCZByRH9ujNKougCaMY+0++0D+ZDm7qsdt0N0JZ0I5wHsramzXgUAxBG2LZWmjoXJzCLjPM9I/uqSElTV5PjlG6cOkxZcZfvEGgI8EQ70wIbanq28qQKv6E1t7AV581/OP8xaghw0hxiI4dmmWYueddSr37kHiCWxsCS890T51wYUphNHz6vQcmJv5KQe3JGk3AfabeAzOnqrjTl4nMIV6Rlxmd+jhs5qWdpWX03XEqw/8dAsu1XnxAiUGuQzzhOqbmp4yYwYnR4jruo/2tHSiFeAKN3MuUR3ywEQrlKfvG2GYG30YQyHsveH4hqb9HxDCI2KyuNkBoWFr36Dqd2K/iPMD9n1wLuymt8RtaGecrHawdseIvVcyuNsJjNK2dtVbizeeTSJAWk7cPjFmiZq13rk8wTI+2u+CDhtSp68xS7IvSwQQXWg1/5uErj+LjpjENB4COrOVP1Q6GLXXxJSLm7EtCHWTa4Hxg5XDJrKKDLDFjqo+FvV1kzLRx6bYRDmfacy05izf1drC4y6g4ZNJ5aEQBsTOAHSt7t7gDiz/ZsXooPOyuPZo2zk5+ALlIN9qvGypFTXtzYV36vXuGgFTySPIne9/BB5Ermrgol5Hx83bxX3rzLzKc=
