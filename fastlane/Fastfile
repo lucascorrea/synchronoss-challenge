@@ -46,9 +46,9 @@ platform :ios do
       app_identifier: "com.siriuscode.synchronoss",
       keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
       keychain_password: ENV["MATCH_PASSWORD"],
-      readonly: true,
+      readonly: false,
       verbose: true,
-      clone_branch_directly: true,
+      clone_branch_directly: false,
       force_for_new_devices: true
       )
 

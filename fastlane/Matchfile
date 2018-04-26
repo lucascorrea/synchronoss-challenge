@@ -5,6 +5,8 @@ type("adhoc") # The default type, can be: appstore, adhoc, enterprise or develop
 shallow_clone true         # because I don't need the whole git history of the certs
 force_for_new_devices true # if someone adds a device I want to make sure they can test the app
 
+readonly false
+force true
 # app_identifier(["tools.fastlane.app", "tools.fastlane.app2"])
 username("contato@lucascorrea.com") # Your Apple Developer Portal username
 

@@ -674,7 +674,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 26;
 				DEVELOPMENT_TEAM = 6CG326ELR9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/synchronoss/Resources/Info.plist";
@@ -838,7 +838,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 26;
 				DEVELOPMENT_TEAM = 6CG326ELR9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/synchronoss/Resources/Info.plist";
@@ -849,7 +849,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.siriuscode.synchronoss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "60f2a36d-fab9-484f-89af-dfd13f877d87";
+				PROVISIONING_PROFILE = "5758e5ad-2cf8-4163-bddc-29a6d7b8c2bb";
 				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.siriuscode.synchronoss";
 				SWIFT_OBJC_BRIDGING_HEADER = "synchronoss/Helpers/synchronoss-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
@@ -866,7 +866,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 26;
 				DEVELOPMENT_TEAM = 6CG326ELR9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/synchronoss/Resources/Info.plist";
