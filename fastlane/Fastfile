@@ -46,6 +46,7 @@ platform :ios do
       keychain_password: ENV["MATCH_PASSWORD"],
       readonly: false,
       verbose: false,
+      clone_branch_directly: true,
       force_for_new_devices: true
       )
 
