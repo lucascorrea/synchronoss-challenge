@@ -6,15 +6,15 @@ platform :ios do
   before_all do
     ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
 
-    create_keychain(
-      name: ENV["MATCH_KEYCHAIN_NAME"],
-      password: ENV["MATCH_PASSWORD"],
-      default_keychain: true,
-      unlock: true,
-      timeout: 3600,
-      add_to_search_list: true,
-      verbose: true
-      )
+    # create_keychain(
+    #   name: ENV["MATCH_KEYCHAIN_NAME"],
+    #   password: ENV["MATCH_PASSWORD"],
+    #   default_keychain: true,
+    #   unlock: true,
+    #   timeout: 3600,
+    #   add_to_search_list: true,
+    #   verbose: true
+    #   )
   end
 
   desc "Push a new beta build to Fabric"
@@ -49,12 +49,12 @@ platform :ios do
   end
 
   after_all do |lane|
-    delete_keychain( name: ENV["MATCH_KEYCHAIN_NAME"] )
+    # delete_keychain( name: ENV["MATCH_KEYCHAIN_NAME"] )
     slack( message: "New version of Synchronoss." )
   end
 
   error do |lane, exception|
-    delete_keychain( name: ENV["MATCH_KEYCHAIN_NAME"] )
+    # delete_keychain( name: ENV["MATCH_KEYCHAIN_NAME"] )
     slack( message: exception.message, success: false )
   end
 end

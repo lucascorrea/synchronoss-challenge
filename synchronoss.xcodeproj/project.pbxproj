@@ -685,8 +685,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.siriuscode.synchronoss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d566d453-d555-4188-bdfa-ed86d97396d1";
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.siriuscode.synchronoss";
+				PROVISIONING_PROFILE = "021add17-a688-4034-b636-39e5a03df972";
+				PROVISIONING_PROFILE_SPECIFIER = "com.siriuscode.synchronoss AdHoc";
 				SWIFT_OBJC_BRIDGING_HEADER = "synchronoss/Helpers/synchronoss-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -849,8 +849,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.siriuscode.synchronoss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d566d453-d555-4188-bdfa-ed86d97396d1";
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.siriuscode.synchronoss";
+				PROVISIONING_PROFILE = "021add17-a688-4034-b636-39e5a03df972";
+				PROVISIONING_PROFILE_SPECIFIER = "com.siriuscode.synchronoss AdHoc";
 				SWIFT_OBJC_BRIDGING_HEADER = "synchronoss/Helpers/synchronoss-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -877,8 +877,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.siriuscode.synchronoss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d566d453-d555-4188-bdfa-ed86d97396d1";
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.siriuscode.synchronoss";
+				PROVISIONING_PROFILE = "021add17-a688-4034-b636-39e5a03df972";
+				PROVISIONING_PROFILE_SPECIFIER = "com.siriuscode.synchronoss AdHoc";
 				SWIFT_OBJC_BRIDGING_HEADER = "synchronoss/Helpers/synchronoss-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
