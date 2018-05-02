@@ -3,30 +3,41 @@ default_platform(:ios)
 
 platform :ios do
 
-  before_all do
+  before_all do |lane|
     ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
 
+    if lane == :adhoc
+      create_keychain(
+        name: ENV["MATCH_KEYCHAIN_NAME"],
+        password: ENV["MATCH_PASSWORD"],
+        default_keychain: true,
+        unlock: true,
+        timeout: 3600,
+        add_to_search_list: true,
+        verbose: true
+        )
+    end
 
-    # create_keychain(
-    #   name: ENV["MATCH_KEYCHAIN_NAME"],
-    #   password: ENV["MATCH_PASSWORD"],
-    #   default_keychain: true,
-    #   unlock: true,
-    #   timeout: 3600,
-    #   add_to_search_list: true,
-    #   verbose: true
-    #   )
+  end
+
+  desc "Push a new beta build to Fabric - Travis"
+  lane :travis do
+    setup_travis
+    increment_build_number
+    update_info_plist
+    match
+    gym
+    send_crashlytics
   end
 
   desc "Push a new beta build to Fabric"
   lane :adhoc do
-    setup_travis
-    # increment_build_number
-    # update_info_plist
-    # clean_build_artifacts
+    increment_build_number
+    update_info_plist
+    clean_build_artifacts
     match
     gym
-    # send_crashlytics
+    send_crashlytics
   end
 
   desc "Runs all the tests"
@@ -37,7 +48,6 @@ platform :ios do
 
   desc "Send to Crashlytics"
   private_lane :send_crashlytics do
-
     crashlytics(
       api_token: "98172dd97f0390bc2912872b57613dbb1be6cb34",
       build_secret: "b8ab2b0b7b0821f6ed7d72ac78d1df563f3c8d6a4c90843533ff87fd5f6f465d",
@@ -46,16 +56,20 @@ platform :ios do
       notes: "New version of Synchronoss.",
       notifications: true
       )
-
   end
 
   after_all do |lane|
-    # delete_keychain( name: ENV["MATCH_KEYCHAIN_NAME"] )
+    if lane == :adhoc
+      delete_keychain( name: ENV["MATCH_KEYCHAIN_NAME"] )
+    end
+
     slack( message: "New version of Synchronoss." )
   end
 
   error do |lane, exception|
-    # delete_keychain( name: ENV["MATCH_KEYCHAIN_NAME"] )
+    if lane == :adhoc
+      delete_keychain( name: ENV["MATCH_KEYCHAIN_NAME"] )
+    end
     slack( message: exception.message, success: false )
   end
 end

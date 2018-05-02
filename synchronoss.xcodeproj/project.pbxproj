@@ -674,10 +674,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_TEAM = 6CG326ELR9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/synchronoss/Resources/Info.plist";
+				INFOPLIST_FILE = synchronoss/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -837,10 +837,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_TEAM = 6CG326ELR9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/synchronoss/Resources/Info.plist";
+				INFOPLIST_FILE = synchronoss/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -848,6 +848,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.siriuscode.synchronoss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d981f9ff-3825-4513-b31f-b2b25289b2af";
 				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.siriuscode.synchronoss";
 				SWIFT_OBJC_BRIDGING_HEADER = "synchronoss/Helpers/synchronoss-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
@@ -864,10 +865,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_TEAM = 6CG326ELR9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/synchronoss/Resources/Info.plist";
+				INFOPLIST_FILE = synchronoss/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

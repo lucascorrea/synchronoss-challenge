@@ -16,6 +16,11 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## iOS
+### ios travis
+```
+fastlane ios travis
+```
+Push a new beta build to Fabric - Travis
 ### ios adhoc
 ```
 fastlane ios adhoc
