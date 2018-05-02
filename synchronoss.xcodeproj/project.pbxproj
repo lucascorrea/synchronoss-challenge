@@ -142,6 +142,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A044271B2099F73D0072FF14 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A0A5006F20765CE800FB6C24 /* Main.storyboard */,
+				A0A5007420765CEA00FB6C24 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		A072510E2079897F00DC1A65 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,7 +206,8 @@
 		A0A5006820765CE800FB6C24 /* synchronoss */ = {
 			isa = PBXGroup;
 			children = (
-				A0A5009B2076625A00FB6C24 /* App */,
+				A0A5009B2076625A00FB6C24 /* AppDelegate */,
+				A044271B2099F73D0072FF14 /* Storyboards */,
 				A0A5009C2076626000FB6C24 /* Protocols */,
 				A0A5009D2076626900FB6C24 /* Helpers */,
 				A0A5009E2076627000FB6C24 /* Extensions */,
@@ -211,14 +221,12 @@
 			path = synchronoss;
 			sourceTree = "<group>";
 		};
-		A0A5009B2076625A00FB6C24 /* App */ = {
+		A0A5009B2076625A00FB6C24 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
 				A0A5006920765CE800FB6C24 /* AppDelegate.swift */,
-				A0A5006F20765CE800FB6C24 /* Main.storyboard */,
-				A0A5007420765CEA00FB6C24 /* LaunchScreen.storyboard */,
 			);
-			path = App;
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 		A0A5009C2076626000FB6C24 /* Protocols */ = {
