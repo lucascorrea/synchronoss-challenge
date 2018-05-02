@@ -12,6 +12,7 @@ script:
 # - xcodebuild -workspace synchronoss.xcworkspace -scheme synchronoss -sdk iphonesimulator
 #   -enableCodeCoverage YES -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.3'
 #   GCC_GENERATE_TEST_COVERAGE_FILES=YES build test
+- fastlane test
 - fastlane travis
 after_success:
 - bash <(curl -s https://codecov.io/bash)
