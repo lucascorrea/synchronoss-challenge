@@ -2,12 +2,12 @@ ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
 FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Crashlytics/iOS" "${PODS_ROOT}/Fabric/iOS" "${PODS_ROOT}/TwitterCore" "${PODS_ROOT}/TwitterKit"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Crashlytics" "${PODS_ROOT}/Headers/Public/Fabric" "${PODS_ROOT}/Headers/Public/SCTwitter" "${PODS_ROOT}/Headers/Public/TwitterCore" "${PODS_ROOT}/Headers/Public/TwitterKit"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/SCTwitter" "${PODS_CONFIGURATION_BUILD_DIR}/SWXMLHash"
-OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SWXMLHash/SWXMLHash.modulemap" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Crashlytics" -isystem "${PODS_ROOT}/Headers/Public/Fabric" -isystem "${PODS_ROOT}/Headers/Public/SCTwitter" -isystem "${PODS_ROOT}/Headers/Public/TwitterCore" -isystem "${PODS_ROOT}/Headers/Public/TwitterKit"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Alamofire" -l"SCTwitter" -l"SWXMLHash" -l"c++" -l"z" -framework "Accounts" -framework "CoreData" -framework "CoreGraphics" -framework "CoreText" -framework "Crashlytics" -framework "Fabric" -framework "Foundation" -framework "QuartzCore" -framework "Security" -framework "Social" -framework "SystemConfiguration" -framework "TwitterCore" -framework "TwitterKit" -framework "UIKit"
-OTHER_SWIFT_FLAGS = $(inherited) -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SWXMLHash/SWXMLHash.modulemap" $(inherited) "-D" "COCOAPODS"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/SCTwitter" "${PODS_CONFIGURATION_BUILD_DIR}/SWXMLHash"
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SWXMLHash/SWXMLHash.modulemap" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Crashlytics" -isystem "${PODS_ROOT}/Headers/Public/Fabric" -isystem "${PODS_ROOT}/Headers/Public/SCTwitter" -isystem "${PODS_ROOT}/Headers/Public/TwitterCore" -isystem "${PODS_ROOT}/Headers/Public/TwitterKit"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"SCTwitter" -l"SWXMLHash" -l"c++" -l"z" -framework "Accounts" -framework "CoreData" -framework "CoreGraphics" -framework "CoreText" -framework "Crashlytics" -framework "Fabric" -framework "Foundation" -framework "QuartzCore" -framework "Security" -framework "Social" -framework "SystemConfiguration" -framework "TwitterCore" -framework "TwitterKit" -framework "UIKit"
+OTHER_SWIFT_FLAGS = $(inherited) -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SWXMLHash/SWXMLHash.modulemap" $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods
-SWIFT_INCLUDE_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/SWXMLHash"
+SWIFT_INCLUDE_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/SWXMLHash"

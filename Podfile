@@ -3,8 +3,7 @@ platform :ios, '9.0'
 target 'synchronoss' do
 
   inhibit_all_warnings!
-
-  pod 'Alamofire'
+  
   pod 'SwiftLint'
   pod 'SWXMLHash', '~> 4.0.0'
   pod 'SCTwitter'

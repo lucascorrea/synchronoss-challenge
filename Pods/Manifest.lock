@@ -1,5 +1,4 @@
 PODS:
-  - Alamofire (4.7.1)
   - Crashlytics (3.10.1):
     - Fabric (~> 1.7.5)
   - Fabric (1.7.6)
@@ -14,7 +13,6 @@ PODS:
   - TwitterKit (1.11.3)
 
 DEPENDENCIES:
-  - Alamofire
   - Crashlytics
   - Fabric
   - Nimble
@@ -25,7 +23,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - Alamofire
     - Crashlytics
     - Fabric
     - Nimble
@@ -37,7 +34,6 @@ SPEC REPOS:
     - TwitterKit
 
 SPEC CHECKSUMS:
-  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
   Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
   Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
@@ -48,6 +44,6 @@ SPEC CHECKSUMS:
   TwitterCore: ac822b826d021c483569d3d0588645dfa543bee9
   TwitterKit: 8900e0032610749cebb37a9950f40fd1da606587
 
-PODFILE CHECKSUM: 1d51c4d2fa1750f66e09733fa02c1367ef0cedbd
+PODFILE CHECKSUM: 1cf03ccc3146d6b4e3ddfbdd3fa81caf9919581b
 
 COCOAPODS: 1.5.0.beta.1

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Alamofire
 
 enum API {
     case allStations
@@ -18,12 +17,12 @@ extension API {
     var baseURL: URL {
         return URL(string: "http://api.irishrail.ie/realtime/realtime.asmx/")!
     }
-    var method: HTTPMethod {
+    var method: String {
         switch self {
         case .allStations:
-            return .get
+            return "GET"
         case .stationDataByCode:
-            return .get
+            return "GET"
         }
     }
     var path: String {
@@ -34,21 +33,21 @@ extension API {
             return "getStationDataByCodeXML?StationCode=\(code)"
         }
     }
-    var headers: [String: String]? {
-        return nil
+    var headers: [String: String] {
+        return [:]
     }
-    var parameters: [String: Any]? {
+    var parameters: [String: Any] {
         switch self {
         default :
-            return nil
+            return [:]
         }
     }
-    var url: String {
+    var url: URL {
         switch self {
         case .allStations:
-            return "\(baseURL)\(path)"
+            return URL(string: "\(baseURL)\(path)")!
         case .stationDataByCode:
-            return "\(baseURL)\(path)"
+            return URL(string: "\(baseURL)\(path)")!
         }
     }
 }

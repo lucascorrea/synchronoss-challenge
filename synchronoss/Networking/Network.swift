@@ -7,27 +7,35 @@
 //
 
 import UIKit
-import Alamofire
 
 public typealias SuccessHandler = (AnyObject?) -> Void
-public typealias FailureHandler = (HTTPURLResponse?, AnyObject?, Error?) -> Void
+public typealias FailureHandler = (URLResponse?, AnyObject?, Error?) -> Void
 
 class Network {
     
     static func request(target: API, success: @escaping SuccessHandler, failure: @escaping FailureHandler) {
         print(target.url)
         
-        Alamofire.request(target.url, method: target.method, parameters: target.parameters, encoding: URLEncoding.default, headers: target.headers).responseString { (response) in
-            
-            if response.result.isFailure {
-                failure(response.response, response.result.value as AnyObject?, response.result.error)
+        var urlRequest = URLRequest(url: target.url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 60)
+        urlRequest.httpMethod = target.method
+        
+        for (key, value) in target.headers {
+            urlRequest.setValue(value, forHTTPHeaderField: key)
+        }
+        
+        let task = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
+            if (error != nil) {
+                failure(response, data as AnyObject?, error)
             } else {
-                if let json = response.result.value {
-                    success(json as AnyObject)
+                if let json = data {
+                    DispatchQueue.main.async {
+                        let string = String(data: json, encoding: String.Encoding.utf8)
+                        success(string as AnyObject)
+                    }
                 }
                 
             }
         }
+        task.resume()
     }
-    
 }

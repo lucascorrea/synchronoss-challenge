@@ -42,7 +42,7 @@ class StationsViewModel {
                 let array = self.stationsItems
                 self.stationsItems.removeAll()
                 array.forEach({ (station) in
-                    if station.name == "Dalkey" || station.name == "Rathdrum" || station.name == "Dublin Pearse" {
+                    if station.name == "Dalkey" || station.name == "Blackrock" || station.name == "Dublin Pearse" {
                         self.stationsItems.append(station)
                     }
                 })

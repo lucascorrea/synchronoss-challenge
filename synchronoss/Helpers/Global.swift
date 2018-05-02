@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import Alamofire
 
 class Global {
     internal static var dateFormatter: DateFormatter = DateFormatter()
