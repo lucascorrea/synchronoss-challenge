@@ -20,12 +20,12 @@ platform :ios do
   desc "Push a new beta build to Fabric"
   lane :adhoc do
     setup_travis
-    increment_build_number
-    update_info_plist
-    clean_build_artifacts
+    # increment_build_number
+    # update_info_plist
+    # clean_build_artifacts
     match
     gym
-    send_crashlytics
+    # send_crashlytics
   end
 
   desc "Runs all the tests"
