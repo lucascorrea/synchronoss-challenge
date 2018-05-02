@@ -1,8 +1,7 @@
 app_identifier("com.siriuscode.synchronoss") # The bundle identifier of your app
+
 apple_id("contato@lucascorrea.com") # Your Apple email address
 
 itc_team_id("402858") # iTunes Connect Team ID
-team_id("6CG326ELR9") # Developer Portal Team ID
 
-# For more information about the Appfile, see:
-#     https://docs.fastlane.tools/advanced/#appfile
+team_id("6CG326ELR9") # Developer Portal Team ID
